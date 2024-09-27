@@ -1,14 +1,14 @@
-﻿namespace Register.Desktop.Application.Commands.Requests
+﻿namespace Register.Desktop.Infra.CrossCutting.DTOs
 {
-    public class Requests<T> where T : class
+    public class ResponseDTO<T> where T : class
     {
         public T Datas { get; set; } = null!;
         public string? Message { get; set; }
 
-        public Requests()
+        public ResponseDTO()
         { }
 
-        public Requests(T datas, string? message = null)
+        public ResponseDTO(T datas, string? message = null)
         {
             Datas = datas;
             Message = message;

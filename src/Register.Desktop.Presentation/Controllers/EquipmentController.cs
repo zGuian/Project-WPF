@@ -1,5 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Register.Desktop.Application.Commands.Requests;
+using Register.Desktop.Application.Commands.Responses;
 using Register.Desktop.Application.Interfaces;
+using Register.Desktop.Domain.Entities;
 
 namespace Register.Desktop.Presentation.Controllers
 {
@@ -7,17 +10,28 @@ namespace Register.Desktop.Presentation.Controllers
     [Route("api/v1/[controller]")]
     public class EquipmentController : ControllerBase
     {
-        private readonly IServicesEquipment _services;
+        private readonly IHandlerEquipment _handler = null!;
 
-        public EquipmentController(IServicesEquipment services)
+        public EquipmentController()
+        { }
+
+        public EquipmentController(IHandlerEquipment handler)
         {
-            _services = services;
+            _handler = handler;
         }
 
-        [HttpPost("EntryLaboratory")]
-        public IActionResult Entry()
+        [HttpGet("GetEquipments")]
+        public async Task<IActionResult> GetEquipments(Requests<Equipment> requests, CancellationToken cancellationToken)
         {
-            return StatusCode(StatusCodes.Status500InternalServerError);
+            Responses<Equipment> equipments = await _handler.Handle(requests, cancellationToken);
+            return Ok(equipments);
+        }
+
+        [HttpPost("RegisterOrUpdate")]
+        public async Task<IActionResult> RegisterOrUpdate(Requests<Equipment> requests, CancellationToken cancellationToken)
+        {
+            await _handler.Handle(requests, cancellationToken);
+            return Ok();
         }
     }
 }

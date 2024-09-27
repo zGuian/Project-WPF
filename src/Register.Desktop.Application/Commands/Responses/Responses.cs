@@ -2,18 +2,23 @@
 {
     public class Responses<T> where T : class
     {
-        public ICollection<T> Data { get; set; } = null!;
+        public int? TotalCount { get; set; }
+        public ICollection<T> Datas { get; set; } = null!;
         public string? Message { get; set; }
 
-        public Responses(ICollection<T> data, string? message = null)
+        public Responses()
+        { }
+
+        public Responses(ICollection<T> datas, int totalCount, string? message = null)
         {
-            Data = data;
+            Datas = datas;
+            TotalCount = totalCount;
             Message = message;
         }
 
-        public Responses(T data, string? message = null) 
+        public Responses(T data, string? message = null)
         {
-            _ = Data.FirstOrDefault(data);
+            Datas = [data];
             Message = message;
         }
     }

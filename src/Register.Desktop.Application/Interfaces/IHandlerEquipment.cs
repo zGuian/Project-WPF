@@ -4,7 +4,7 @@ using Register.Desktop.Domain.Entities;
 
 namespace Register.Desktop.Application.Interfaces
 {
-    public interface IEquipmentHandler
+    public interface IHandlerEquipment
     {
         Task<Responses<Equipment>> Handle(Requests<Equipment> request, CancellationToken cancellationToken);
     }

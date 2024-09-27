@@ -11,7 +11,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\REGISTER.DESKTOP.DOMAIN\Register.Desktop.Domain.csproj" />
+    <ProjectReference Include="..\Register.Desktop.Application\Register.Desktop.Application.csproj" />
+    <ProjectReference Include="..\Register.Desktop.Infra.CrossCutting\Register.Desktop.Infra.CrossCutting.csproj" />
+    <ProjectReference Include="..\Register.Desktop.Infra.Data\Register.Desktop.Infra.Data.csproj" />
   </ItemGroup>
 
 </Project>

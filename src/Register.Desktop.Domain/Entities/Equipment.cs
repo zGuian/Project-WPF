@@ -2,31 +2,29 @@
 {
     public class Equipment
     {
-        public string Name { get; private set; } = string.Empty;
+        public int Id { get; set; }
+        public string Modelo { get; private set; } = string.Empty;
         public string? Hostname { get; private set; }
         public string? Inventory { get; private set; }
-        public string SerialNumber { get; private set; } = string.Empty;
+        public string? SerialNumber { get; private set; } = string.Empty;
         public string UserInsertion { get; private set; } = string.Empty;
+        public bool IsActive { get; private set; }
         public DateTime Date { get; set; }
-
 
         public Equipment()
         {
         }
 
-        public Equipment(string name, string? hostname, string? inventory, string serialNumber,
-             string userInsertion)
+        public Equipment(int id, string modelo, string? hostname, string? inventory, string serialNumber,
+             string userInsertion, bool isActive)
         {
-            ToAddEquipment(name, hostname, inventory, serialNumber, userInsertion);
-        }
-
-        private void ToAddEquipment(string name, string? hostname, string? inventory, string serialNumber, string userInsertion)
-        {
-            Name = name;
+            Id = id;
+            Modelo = modelo;
             Hostname = hostname;
             Inventory = inventory;
             SerialNumber = serialNumber;
             UserInsertion = userInsertion;
+            IsActive = isActive;
             Date = DateTime.Now.Date;
         }
     }
