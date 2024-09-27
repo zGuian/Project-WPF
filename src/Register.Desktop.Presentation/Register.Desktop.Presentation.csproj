@@ -11,10 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <ProjectReference Include="..\Register.Desktop.Application\Register.Desktop.Application.csproj" />
     <ProjectReference Include="..\Register.Desktop.Infra.CrossCutting.IOC\Register.Desktop.Infra.CrossCutting.IOC.csproj" />
   </ItemGroup>
 

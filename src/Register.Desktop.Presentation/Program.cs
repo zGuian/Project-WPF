@@ -1,7 +1,3 @@
-using Microsoft.Extensions.DependencyInjection;
-using Register.Desktop.Domain.Handlers;
-using System.Reflection;
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.

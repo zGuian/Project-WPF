@@ -15,13 +15,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. Infrastructure", "4. Inf
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Register.Desktop.Domain", "REGISTER.DESKTOP.DOMAIN\Register.Desktop.Domain.csproj", "{0059143B-57A5-4F9C-8805-97290953F4B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Register.Desktop.Infra.CrossCutting.IOC", "Register.Desktop.Infra.CrossCutting.IOC\Register.Desktop.Infra.CrossCutting.IOC.csproj", "{91B261CE-736B-4FEF-B1A4-14152E2DE2A9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Register.Desktop.Infra.CrossCutting.IOC", "Register.Desktop.Infra.CrossCutting.IOC\Register.Desktop.Infra.CrossCutting.IOC.csproj", "{91B261CE-736B-4FEF-B1A4-14152E2DE2A9}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Register.Desktop.Presentation", "Register.Desktop.Presentation\Register.Desktop.Presentation.csproj", "{E9BBE160-FBE2-45D5-B786-D29B533FF138}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Register.Desktop.Infra.CrossCutting", "Register.Desktop.Infra.CrossCutting\Register.Desktop.Infra.CrossCutting.csproj", "{1C19D690-00D0-4BF9-87FD-EB238EAD3992}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Register.Desktop.Infra.CrossCutting", "Register.Desktop.Infra.CrossCutting\Register.Desktop.Infra.CrossCutting.csproj", "{1C19D690-00D0-4BF9-87FD-EB238EAD3992}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Register.Desktop.Application", "Register.Desktop.Application\Register.Desktop.Application.csproj", "{0B862B7A-ECA1-4B99-9E3B-B134275A6AC3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Register.Desktop.Application", "Register.Desktop.Application\Register.Desktop.Application.csproj", "{0B862B7A-ECA1-4B99-9E3B-B134275A6AC3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.1 Infra.Data", "4.1 Infra.Data", "{4F4170AC-F3EB-40BD-874A-FB3BA66F640F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.2 Infra.CrossCutting", "4.2 Infra.CrossCutting", "{69DB205E-99DB-4D47-8CB1-C0D0D62C915C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -59,10 +63,12 @@ Global
 		{89E20727-874A-4439-9131-F4C2FE1D5470} = {4594752A-E75D-45E5-ACDC-28A7E0827CFB}
 		{63BC021D-BB6C-42B1-8CD8-92C5689BD035} = {4594752A-E75D-45E5-ACDC-28A7E0827CFB}
 		{0059143B-57A5-4F9C-8805-97290953F4B4} = {89E20727-874A-4439-9131-F4C2FE1D5470}
-		{91B261CE-736B-4FEF-B1A4-14152E2DE2A9} = {63BC021D-BB6C-42B1-8CD8-92C5689BD035}
+		{91B261CE-736B-4FEF-B1A4-14152E2DE2A9} = {69DB205E-99DB-4D47-8CB1-C0D0D62C915C}
 		{E9BBE160-FBE2-45D5-B786-D29B533FF138} = {CF796610-9963-42F3-BFE1-456C9FEE1E87}
-		{1C19D690-00D0-4BF9-87FD-EB238EAD3992} = {63BC021D-BB6C-42B1-8CD8-92C5689BD035}
+		{1C19D690-00D0-4BF9-87FD-EB238EAD3992} = {69DB205E-99DB-4D47-8CB1-C0D0D62C915C}
 		{0B862B7A-ECA1-4B99-9E3B-B134275A6AC3} = {3A3609C2-8CC9-4ECE-91B2-95D77253ECD8}
+		{4F4170AC-F3EB-40BD-874A-FB3BA66F640F} = {63BC021D-BB6C-42B1-8CD8-92C5689BD035}
+		{69DB205E-99DB-4D47-8CB1-C0D0D62C915C} = {63BC021D-BB6C-42B1-8CD8-92C5689BD035}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {43B96FDD-D36E-430D-81AF-AFCBDBB21EDE}
